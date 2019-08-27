@@ -1,0 +1,64 @@
+.home-hero-arrow {
+	@include container;
+    text-align: center;
+    a {
+        color:  $primarycolor;
+    }
+}
+
+/* homepage posts styles */
+.posts {
+  @include container;
+  margin-top: 15px;
+  padding-bottom: 25px;
+  }
+
+  .posts> ul {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1.5rem;
+  }
+
+  .posts > ul > li {
+    border: 1px solid #E2E2E2;
+    border-radius: .5rem;
+  }
+
+  .posts > ul > li > figure {
+    max-height: 220px;
+    overflow: hidden;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    position: relative;
+  }
+
+  .posts > ul > li > figure > img {
+    width: 100%;
+  }
+
+  .posts > ul > li > figure > figcaption {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+  }
+
+  .posts > ul > li > figure > figcaption > h3 {
+    color: white;
+    padding: .5rem;
+    font-size: 1.25rem;
+  }
+
+  .posts > ul > li > p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 1rem .75rem;
+    color: #666666;
+  }
+
+  .posts > ul > li > a {
+    padding: .3rem 1rem;
+    margin: .3rem;
+  }
