@@ -374,7 +374,7 @@ h1, h2, p {
 h1 {
   color: #c1272c;
   line-height: 1;
-  font-size: 3.125rem; }
+  font-size: 2rem; }
   @media (min-width: 1170px) {
     h1 {
       font-size: 4.25rem; } }
@@ -448,7 +448,7 @@ header {
     .header-container {
       display: grid;
       grid-column-gap: 10px;
-      grid-template-columns: 100px auto auto; } }
+      grid-template-columns: 100px 400px auto; } }
 
 .header-logo {
   margin-top: 1em; }
@@ -481,24 +481,35 @@ header {
   text-decoration: none; }
 
 .header-nav {
-  margin-top: 1em; }
-  @media (max-width: "(max-width: 768px)" - 1px) {
-    .header-nav {
-      display: none !important; } }
+  margin-top: 1em;
+  margin-left: 150px; }
 
 .header-nav ul {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  width: 380px; }
 
-.header-nav li {
+.nav-li {
+  width: 100px; }
+
+.nav-list li {
   display: inline-block;
   margin-right: 0px;
-  font-family: "Playfair Display", serif;
-  font-weight: 300;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
   font-size: 17px; }
 
-.header-nav a {
-  color: #4a4a4a; }
+.nav-list a {
+  color: #4a4a4a;
+  text-decoration: none; }
+
+.nav-list {
+  -moz-column-count: 2;
+  -moz-column-gap: 15px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 15px;
+  column-count: 2;
+  column-gap: 15px; }
 
 .welcome {
   background-image: url(../img/header-bg.png);
@@ -565,14 +576,11 @@ header {
   grid-gap: 1.5rem; }
 
 .posts > ul > li {
-  border: 1px solid #E2E2E2;
-  border-radius: .5rem; }
+  border: 1px solid #E2E2E2; }
 
 .posts > ul > li > figure {
   max-height: 220px;
   overflow: hidden;
-  border-top-left-radius: .5rem;
-  border-top-right-radius: .5rem;
   position: relative; }
 
 .posts > ul > li > figure > img {
@@ -581,13 +589,13 @@ header {
 .posts > ul > li > figure > figcaption {
   position: absolute;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   width: 100%; }
 
 .posts > ul > li > figure > figcaption > h3 {
   color: white;
-  padding: .5rem;
-  font-size: 1.25rem; }
+  padding: .4rem;
+  font-size: 1.1rem; }
 
 .posts > ul > li > p {
   font-size: 1rem;
@@ -598,6 +606,11 @@ header {
 .posts > ul > li > a {
   padding: .3rem 1rem;
   margin: .3rem; }
+
+.posts h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2em;
+  color: #4a4a4a; }
 
 .portfolio {
   text-align: center;

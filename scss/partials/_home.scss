@@ -23,14 +23,14 @@
 
   .posts > ul > li {
     border: 1px solid #E2E2E2;
-    border-radius: .5rem;
+    //border-radius: .5rem;
   }
 
   .posts > ul > li > figure {
     max-height: 220px;
     overflow: hidden;
-    border-top-left-radius: .5rem;
-    border-top-right-radius: .5rem;
+    //border-top-left-radius: .5rem;
+    //border-top-right-radius: .5rem;
     position: relative;
   }
 
@@ -41,14 +41,16 @@
   .posts > ul > li > figure > figcaption {
     position: absolute;
     bottom: 0;
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0,0,0,.6);
     width: 100%;
+    font-family:  $base-font-family;
   }
 
   .posts > ul > li > figure > figcaption > h3 {
     color: white;
-    padding: .5rem;
-    font-size: 1.25rem;
+    padding: .4rem;
+    font-family:  $base-font-family;
+    font-size: 1.1rem;
   }
 
   .posts > ul > li > p {
@@ -56,9 +58,16 @@
     line-height: 1.5;
     padding: 1rem .75rem;
     color: #666666;
+    font-family:  $base-font-family;
   }
 
   .posts > ul > li > a {
     padding: .3rem 1rem;
     margin: .3rem;
+  }
+
+  .posts h1 {
+    font-family:  $base-font-family;
+    font-size:  2em;
+    color: $secondarycolor;
   }

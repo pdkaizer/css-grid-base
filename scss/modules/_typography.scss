@@ -1,20 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,900|Six+Caps');
-
-$ff-s: 'Merriweather', serif;
-$ff-ss: 'Six Caps', sans-serif;
-
-$fw-n: 400;
-$fw-b: 900;
-
-@mixin sans-serif($fs, $ls: .15em, $color: $dark-gray, $tt: uppercase, $lh: 1) {
-  font-size: $fs;
-  letter-spacing: $ls;
-  color: $color;
-  text-transform: $tt;
-  line-height: $lh;
-  font-family: $ff-ss;
-  font-weight: $fw-n;
-}
 
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i|Source+Sans+Pro:300,400,400i,700');
 
@@ -22,7 +5,4 @@ $fw-b: 900;
 $base-font-family: 'Source Sans Pro', sans-serif;
 $heading-font-family: 'Playfair Display', serif;
 $condensed-font-family: 'Source Sans Pro', sans-serif;
-//$base-font-family: 'Open Sans', sans-serif;
-//$heading-font-family: 'Open Sans', sans-serif;
-//$condensed-font-family: 'Open Sans Condensed', sans-serif;
 $basefontsize: 16;
