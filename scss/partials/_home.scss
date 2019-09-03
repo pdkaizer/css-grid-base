@@ -1,6 +1,6 @@
 .home-hero-image {
-  background-image: url(/images/header-images/nyc-05-2019.jpg);
   padding: 35px;
+  margin-top: 10px;
 }
 
 .home-hero-callout {
@@ -36,26 +36,30 @@
   @include container;
   margin-top: 15px;
   padding-bottom: 25px;
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    }
   }
 
   .posts> ul {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-gap: 1.2rem;
   }
 
   .posts > ul > li {
     border: 1px solid #E2E2E2;
     //border-radius: .5rem;
+    padding: 0;
+    margin: 0;
   }
 
   .posts > ul > li > figure {
     max-height: 220px;
     overflow: hidden;
-    //border-top-left-radius: .5rem;
-    //border-top-right-radius: .5rem;
     position: relative;
   }
 
@@ -73,9 +77,10 @@
 
   .posts > ul > li > figure > figcaption > h3 {
     color: white;
-    padding: .1rem.6rem;
-    font-size: 1.4rem;
-    font-weight: 400;
+    padding: .4rem 0rem .4rem .9rem;
+    margin:0;
+    font-size: 1.2rem;
+    font-weight: 600;
   }
 
   .posts > ul > li > p {
@@ -102,6 +107,26 @@
       font-size:  2rem;
       color: $secondarycolor;
       font-weight: 400;
+    }
+  }
+
+  .project {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2.5rem;
+    color: $secondarycolor;
+    font-size:  1.25rem;
+    img {
+      border: 1px solid $secondarycolor;
+    }
+    h3 {
+      margin-top: 0;
+      padding-top:  0;
+      font-weight: 400;
+      font-size: 1.5rem;
+    }
+    @media  (max-width: 850px) {
+      grid-template-columns: auto;
     }
   }
 

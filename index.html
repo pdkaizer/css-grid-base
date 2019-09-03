@@ -20,7 +20,16 @@
         <h4>designer | developer</h4>
     </div>
     <div class="header-nav-mobile">
-      <i class="far fa-bars fa-4x"></i>
+     <span class="menu-mobile" onclick="openNav()"><i class="far fa-bars fa-3x" aria-hidden="true"></i></span>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/about"><i class="far fa-user"></i> About</a>
+        <a href="/journal"><i class="fal fa-pencil"></i> Reading & Writing</a>
+        <a href="/work"><i class="far fa-desktop-alt"></i> Work</a>
+         <a href="/photos"><i class="far fa-image"></i> Photos</a>
+         <a href="/contact"><i class="fal fa-envelope"></i> Contact</a>
+        <a href="http://books.peterkaizer.com/"><i class="fal fa-book"></i> Recommended Books</a>
     </div>
     <div class="header-nav">
       <nav>
@@ -37,7 +46,7 @@
   </section>
 </header>
 
-<section  class="home-hero-image">
+<section  class="home-hero-image" style="background-image: url(/images/header-images/nyc-05-2019.jpg);">
   <div class="home-hero-callout">
    <h1> Hi there, I am Peter Kaizer</h1>
 
@@ -60,82 +69,91 @@
     <ul>
       <li>
         <figure>
-          <!-- Photo by Quentin Dr on Unsplash -->
-          <img src="https://images.unsplash.com/photo-1471421298428-1513ab720a8e" alt="Several hands holding beer glasses">
-          <figcaption><h3>Billions upon billions</h3></figcaption>
+          <img src="images/header-images/veerles-blog-hero-header.png" alt="Veerle Pieters georgeous new version of her blog">
+          <figcaption><h3>Veerle Pieters georgeous new site</h3></figcaption>
         </figure>
-        <p>
-          Made in the interiors of collapsing stars star stuff harvesting star light venture billions upon billions Drake Equation brain is the seed of intelligence?<br />
+        <p><i class="far fa-calendar-alt"></i> Mar 15, 2019<br />
+          Veerle Pieters has been a favorite designer of mine for many years. In this recent post she talks about how the latest version of her georgeous blog came to life<br />
           <a href="post.html">Read more</a>
         </p>
       </li>
       <li>
         <figure>
-          <!-- Photo by Drew Farwell on Unsplash -->
-          <img src="https://images.unsplash.com/photo-1513309914637-65c20a5962e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80" alt="Several friends doing a toast">
+          <img src="images/header-images/place-holder-image.png" alt="Several friends doing a toast">
+          <figcaption><h3>CSS Grid layout best practices</h3></figcaption>
+        </figure>
+        <p><i class="far fa-calendar-alt"></i> Apr 17, 2018<br />
+          There comes a time when it's time to jump in with both feet on a new technology. For me now is the time with CSS Grid.<br />
+          <a href="#">Read more</a>
+        </p>
+      </li>
+      <li>
+        <figure>
+          <img src="images/header-images/art-direction.png" alt="Art Directing For The Web With CSS Grid">
+          <figcaption><h3>Art Directing For The Web With CSS Grid</h3></figcaption>
+        </figure>
+        <p><i class="far fa-calendar-alt"></i> Apr 13, 2018<br />
+          Great post from the awesome Andy Clarke on using the new CSS grid specification to art direct the layout of web pages.<br />
+          <a href="#">Read more</a>
+        </p>
+      </li>
+      <li>
+        <figure>
+          <img src="images/header-images/place-holder-image.png" alt="Several hands holding beer glasses">
+          <figcaption><h3>Iterative Design, Iterative Code</h3></figcaption>
+        </figure>
+        <p><i class="far fa-calendar-alt"></i> Aug 11, 2016<br />
+          Great post from Brad Frost on getting feedback from the indie web community and particularly from Jonathan Snook.<br />
+          <a href="#">Read more</a>
+        </p>
+      </li>
+      <li>
+        <figure>
+          <img src="images/header-images/place-holder-image.png" alt="Several friends doing a toast">
           <figcaption><h3>Drake Equation</h3></figcaption>
         </figure>
-        <p>
+        <p><i class="far fa-calendar-alt"></i> July, 20, 2019<br />
           Another world citizens of distant epochs from which we spring descended from astronomers Orion's sword shores of the cosmic ocean.<br />
           <a href="#">Read more</a>
         </p>
       </li>
       <li>
         <figure>
-          <!-- Photo by Rawpixel on Unsplash -->
-          <img src="https://images.unsplash.com/photo-1535359056830-d4badde79747?ixlib=rb-1.2.1&auto=format&fit=crop&w=3402&q=80" alt="Three different glasses of beer">
+          <img src="images/header-images/place-holder-image.png" alt="Three different glasses of beer">
           <figcaption><h3>Vast cosmic arena</h3></figcaption>
         </figure>
-        <p>
-          Galaxies the ash of stellar alchemy prime number science inconspicuous motes of rock and gas brain is the seed of intelligence.<br />
-          <a href="#">Read more</a>
-        </p>
-      </li>
-      <li>
-        <figure>
-          <!-- Photo by Quentin Dr on Unsplash -->
-          <img src="https://images.unsplash.com/photo-1471421298428-1513ab720a8e" alt="Several hands holding beer glasses">
-          <figcaption><h3>Billions upon billions</h3></figcaption>
-        </figure>
-        <p>
-          Made in the interiors of collapsing stars star stuff harvesting star light venture billions upon billions Drake Equation brain is the seed of intelligence?<br />
-          <a href="#">Read more</a>
-        </p>
-      </li>
-      <li>
-        <figure>
-          <!-- Photo by Drew Farwell on Unsplash -->
-          <img src="https://images.unsplash.com/photo-1513309914637-65c20a5962e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80" alt="Several friends doing a toast">
-          <figcaption><h3>Drake Equation</h3></figcaption>
-        </figure>
-        <p>
-          Another world citizens of distant epochs from which we spring descended from astronomers Orion's sword shores of the cosmic ocean.<br />
-          <a href="#">Read more</a>
-        </p>
-      </li>
-      <li>
-        <figure>
-          <!-- Photo by Rawpixel on Unsplash -->
-          <img src="https://images.unsplash.com/photo-1535359056830-d4badde79747?ixlib=rb-1.2.1&auto=format&fit=crop&w=3402&q=80" alt="Three different glasses of beer">
-          <figcaption><h3>Vast cosmic arena</h3></figcaption>
-        </figure>
-        <p>
+        <p><i class="far fa-calendar-alt"></i> July, 20, 2019<br />
           Galaxies the ash of stellar alchemy prime number science inconspicuous motes of rock and gas brain is the seed of intelligence.<br />
           <a href="#">Read more</a>
         </p>
       </li>
     </ul>
+     <div class="home-see-all"><h3><a href="/journal">See all posts <i class="fa fa-arrow-right fa=2x" aria-hidden="true"></i></a></h3></div>
 </section>
 
 <section class="featured-project">
 <h1><i class="fal fa-desktop-alt"></i> Featured Project</h1>
 
-<hr />
+<div class="project">
+    <div><img src="/images/portfolio/Medicaid-2018-600.png" /></div>
+    <div>
+      <h3>Medicaid.gov</h3>
+      <p>Design and front-end dev lead lead on a Medicaid project establishing a design system for their 2 primary websites that will be based on the US Web Design Standards.</p>
+
+      <p><strong>Type:</strong> Website</p>
+
+      <p><strong>Skills:</strong> Website design, Sketch, front-end development</p>
+
+      <p><strong>Role:</strong> Design and front-end dev lead</p>
+
+      <p><strong>Visit site:</strong> <a href="https://www.medicaid.gov/">https://www.medicaid.gov/</a></p>
+  </div>
+</div>
 </section>
 
 <section class="featured-photo">
 <h1><i class="fal fa-image"></i> Featured Photo</h1>
-
+<img src="/images/photos/maine-2019.jpg" class="img-responsive" />
 </section>
 
 <footer>
@@ -179,12 +197,10 @@
     </div>
   </div>
 </footer>
-  </div>
+
   <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script src="js/main.js"></script>
-  <script src="js/nav.js"></script>
-  <script src="js/navigation.js"></script>
-  <script src="js/modal.js"></script>
+  <script type="text/javascript" src="js/off-canvas.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 
 </body>
 </html>

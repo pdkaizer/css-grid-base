@@ -353,6 +353,9 @@ template {
 [hidden] {
   display: none; }
 
+html {
+  scroll-behavior: smooth; }
+
 body {
   color: #A7A7A7;
   line-height: 1.5;
@@ -452,7 +455,7 @@ header {
   @media (max-width: 648px) {
     .header-container {
       grid-column-gap: 5px;
-      grid-template-columns: 80px 250px auto; } }
+      grid-template-columns: 80px 230px auto; } }
 
 .header-logo {
   margin-top: 1em; }
@@ -497,14 +500,14 @@ header {
         padding-top: 0;
         padding-bottom: 0;
         line-height: 0;
-        letter-spacing: .16em; } }
+        letter-spacing: .13em; } }
 
 .header-name a {
   color: #4a4a4a;
   text-decoration: none; }
 
 .header-nav-mobile {
-  margin-top: 1em; }
+  margin-top: 1.5em; }
   @media (min-width: 1049px) {
     .header-nav-mobile {
       display: none; } }
@@ -550,9 +553,62 @@ header {
   column-count: 2;
   column-gap: 15px; }
 
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: #4a4a4a;
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */ }
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: #fff;
+  display: block;
+  transition: 0.3s; }
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus {
+  color: #f1f1f1; }
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px; }
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px; }
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px; }
+  .sidenav a {
+    font-size: 18px; } }
+
 .home-hero-image {
-  background-image: url(/images/header-images/nyc-05-2019.jpg);
-  padding: 35px; }
+  padding: 35px;
+  margin-top: 10px; }
 
 .home-hero-callout {
   width: 35%;
@@ -586,16 +642,21 @@ header {
   max-width: 1170px;
   margin-top: 15px;
   padding-bottom: 25px; }
+  .posts h3 {
+    font-size: 1.5rem;
+    font-weight: 400; }
 
 .posts > ul {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 1.5rem; }
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-gap: 1.2rem; }
 
 .posts > ul > li {
-  border: 1px solid #E2E2E2; }
+  border: 1px solid #E2E2E2;
+  padding: 0;
+  margin: 0; }
 
 .posts > ul > li > figure {
   max-height: 220px;
@@ -614,9 +675,10 @@ header {
 
 .posts > ul > li > figure > figcaption > h3 {
   color: white;
-  padding: 0.1rem 0.6rem;
-  font-size: 1.4rem;
-  font-weight: 400; }
+  padding: .4rem 0rem .4rem .9rem;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600; }
 
 .posts > ul > li > p {
   font-size: 1.2rem;
@@ -641,6 +703,23 @@ header {
     font-size: 2rem;
     color: #4a4a4a;
     font-weight: 400; }
+
+.project {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 2.5rem;
+  color: #4a4a4a;
+  font-size: 1.25rem; }
+  .project img {
+    border: 1px solid #4a4a4a; }
+  .project h3 {
+    margin-top: 0;
+    padding-top: 0;
+    font-weight: 400;
+    font-size: 1.5rem; }
+  @media (max-width: 850px) {
+    .project {
+      grid-template-columns: auto; } }
 
 /* homepage featured photo styles */
 .featured-photo {
@@ -676,6 +755,13 @@ header {
       width: 100%; }
       .post h1 {
         font-size: 1.8rem; } }
+
+.post-category {
+  background-color: #cccccc;
+  color: #4a4a4a;
+  padding: 6px;
+  margin-right: 12px;
+  font-size: 14px; }
 
 .external {
   border-left: solid 8px #ddd;

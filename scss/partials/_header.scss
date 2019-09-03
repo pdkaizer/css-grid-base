@@ -14,7 +14,7 @@ header {
 	  }
 	@media  (max-width: 648px) {
 		grid-column-gap: 5px;
-		grid-template-columns: 80px 250px auto;
+		grid-template-columns: 80px 230px auto;
 	}
 }
 
@@ -65,7 +65,7 @@ header {
 				padding-top: 0;
 				padding-bottom: 0;
 				line-height: 0;
-				letter-spacing: .16em;
+				letter-spacing: .13em;
 			}
 		}
 }
@@ -79,7 +79,7 @@ header {
 	@media  (min-width: 1049px) {
 		display: none;
 	}
-	margin-top: 1em;
+	margin-top: 1.5em;
 }
 
 .header-nav {
