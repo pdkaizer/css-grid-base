@@ -536,7 +536,7 @@ header {
 
 .nav-list li {
   display: inline-block;
-  margin-right: 0px;
+  margin: 3px  0px 3px 0px;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   font-size: 17px; }
