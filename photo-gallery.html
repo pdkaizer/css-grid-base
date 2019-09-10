@@ -7,6 +7,8 @@
   <title>CSS Grid Base</title>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-xVVam1KS4+Qt2OrFa+VdRUoXygyKIuNWUUUBZYv+n27STsJ7oDOHJgfF0bNKLMJF" crossorigin="anonymous">
+  <script src='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body>
 
@@ -34,7 +36,7 @@
     <div class="header-nav">
       <nav>
         <ul class="nav-list">
-            <li  class="nav-li"><a href="/page.html"><i class="far fa-user"></i> About</a></li>
+            <li  class="nav-li"><a href="/about"><i class="far fa-user"></i> About</a></li>
             <li><a href="/journal"><i class="fal fa-pencil"></i> Reading & Writing</a></li>
             <li  class="nav-li"><a href="/work"><i class="far fa-desktop-alt"></i> Work</a></li>
             <li class="nav-li"><a href="/photos-landing.html"><i class="far fa-image"></i> Photos</a></li>
@@ -46,54 +48,40 @@
   </section>
 </header>
 
-<section  class="hero-image">
-	<img src="/images/header-images/veerles-blog-hero-header.png" alt="">
+<section  class="photo-gallery-hero">
+    <div class="photo-gallery-hero-area">
+        <h1>Summer 2019 Maine</h1>
+        <div class="photo-gallery-hero-content">
+            <div><img src="/images/photos/maine-2019.jpg" class="img-responsive" /></div>
+            <div>
+                <div id='map' style='width: 100%; height: 180px;'></div>
+                <script>
+                mapboxgl.accessToken = 'pk.eyJ1IjoicGthaXplciIsImEiOiJjazA3emxydmIza3UxM25raXd0aXF5czcxIn0.V4cZpQEeB6SBNlX_3DqatQ';
+                var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/light-v9',
+                center: [-68.67778049999998, 44.2245068], // starting position [lng, lat]
+                zoom: 9 // starting zoom
+                });
+                </script>
+                <p>My wife and I have been going to Maine for the past 5 summers. We usually fly into Portland, ME. Spend a few nights there enjoying the city and the fabulous food scene the and then head about 3 hours north to Deer Isle. This years trip was hightlighed with a oportunity to eat at The Lost Kitchen in Freedom, ME.</p>
+            </div>
+        </div>
+    </div>
 </section>
 
-<section class="post-area">
-    <div class="post">
-        <h1>Veerle Pieters georgeous new version of her blog</h1>
-
-        <p>Veerle Pieters has been a favorite designer of mine for many years. In this recent post she talks about how the latest version of her georgeous blog came to life.</p>
-
-        <p>As a designer who is always wanting to do a design overhaul of my site this piece really hits home. Some of Veerle's quotes that really resonate with me are:</p>
-
-        <p>
-        <blockquote class="external">"Instead I’ve only created the fragments or parts of pages, the rest I directly created with CSS. For me this was the most flexible and productive way to finalise the design."</blockquote>
-
-        <blockquote class="external">"My advice to anyone thinking about a personal brand redesign is to be patient with the process."</blockquote>
-
-        <blockquote class="external">"Try to enjoy the process and embrace the chaos!"</blockquote>
-        </p>
-
-        <p><a href="https://veerle.duoh.com/design/how-the-design-of-my-new-blog-came-to-live">Read the full post</a></p>
-
-        <span class="post-category">design</span><span class="post-category">design-inspiration</span>
-
-        	<div class="comment-area">
-       <div id="disqus_thread"></div>
-<script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://peterkaizer.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </div>
-
-    </div>
+<section  class="photo-page-area">
+    <ul>
+        <li ><img src="/images/photos/maine-2019.jpg" class="img-responsive" /></li>
+        <li><img src="/images/photos/maine-2019.jpg" class="img-responsive" /></li>
+        <li><img src="/images/photos/maine-2019.jpg" class="img-responsive" /></li>
+        <li><img src="/images/photos/maine-2019.jpg" class="img-responsive" /></li>
+        <li><img src="/images/photos/maine-2019.jpg" class="img-responsive" /></li>
+        <li><img src="/images/photos/maine-2019.jpg" class="img-responsive" /></li>
+        <li><img src="/images/photos/maine-2019.jpg" class="img-responsive" /></li>
+        <li><img src="/images/photos/maine-2019.jpg" class="img-responsive" /></li>
+        <li><img src="/images/photos/maine-2019.jpg" class="img-responsive" /></li>
+    </ul>
 </section>
 
 

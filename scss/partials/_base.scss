@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  color: $gray;
+  color: $secondarycolor;
   line-height: 1.5;
   font-family:  $base-font-family;
   background: $white;
@@ -31,13 +31,6 @@ h1 {
   }
 }
 
-h2 {
-  @include sans-serif($fs: 2rem);
-
-  @include mq {
-    font-size: 3rem;
-  }
-}
 
 a {
   color: $primarycolor;
