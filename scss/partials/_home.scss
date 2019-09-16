@@ -35,7 +35,7 @@
 .posts {
   @include container;
   margin-top: 15px;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
   h3 {
     font-size: 1.5rem;
     font-weight: 400;
@@ -101,19 +101,23 @@
 
 .featured-project {
     @include container;
-    margin-top: 15px;
-    padding-bottom: 25px;
+    margin-top: 5px;
+    padding-bottom: 15px;
     h1 {
       font-size:  2rem;
       color: $secondarycolor;
       font-weight: 400;
     }
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      }
   }
 
   .project {
     display: grid;
     grid-template-columns: auto auto;
-    grid-gap: 2.5rem;
+    grid-gap: 1.75rem;
     color: $secondarycolor;
     font-size:  1.25rem;
     img {
@@ -134,8 +138,8 @@
 
 .featured-photo {
     @include container;
-    margin-top: 15px;
-    padding-bottom: 25px;
+    margin-top: 5px;
+    padding-bottom: 15px;
     h1 {
       font-size:  2rem;
       color: $secondarycolor;

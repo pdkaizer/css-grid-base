@@ -9,11 +9,12 @@
 
 .portfolio-item {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(490px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
   grid-gap: 1.8rem;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
   margin-top: 15px;
+  border-bottom: 1px solid $secondarycolor;
 }
 
 .portfolio-image {

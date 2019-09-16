@@ -629,7 +629,7 @@ header {
   margin: 0 auto;
   max-width: 1170px;
   margin-top: 15px;
-  padding-bottom: 25px; }
+  padding-bottom: 15px; }
   .posts h3 {
     font-size: 1.5rem;
     font-weight: 400; }
@@ -685,17 +685,20 @@ header {
   width: 80%;
   margin: 0 auto;
   max-width: 1170px;
-  margin-top: 15px;
-  padding-bottom: 25px; }
+  margin-top: 5px;
+  padding-bottom: 15px; }
   .featured-project h1 {
     font-size: 2rem;
     color: #4a4a4a;
+    font-weight: 400; }
+  .featured-project h3 {
+    font-size: 1.5rem;
     font-weight: 400; }
 
 .project {
   display: grid;
   grid-template-columns: auto auto;
-  grid-gap: 2.5rem;
+  grid-gap: 1.75rem;
   color: #4a4a4a;
   font-size: 1.25rem; }
   .project img {
@@ -714,8 +717,8 @@ header {
   width: 80%;
   margin: 0 auto;
   max-width: 1170px;
-  margin-top: 15px;
-  padding-bottom: 25px; }
+  margin-top: 5px;
+  padding-bottom: 15px; }
   .featured-photo h1 {
     font-size: 2rem;
     color: #4a4a4a;
@@ -794,11 +797,12 @@ header {
 
 .portfolio-item {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(490px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
   grid-gap: 1.8rem;
   padding-top: 15px;
-  padding-bottom: 15px;
-  margin-top: 15px; }
+  padding-bottom: 25px;
+  margin-top: 15px;
+  border-bottom: 1px solid #4a4a4a; }
 
 .portfolio-image img {
   border: solid 1px #4a4a4a; }
